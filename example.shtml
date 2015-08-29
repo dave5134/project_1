@@ -1,0 +1,164 @@
+
+
+ <!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+
+    <title> Homepage </title>
+    	
+    <link rel="stylesheet" type="text/css" href="css/my_ext.css"/>
+    <link rel="stylesheet" type="text/css" href="css/pizza.css"/>
+    <link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen" />
+
+     
+  </head>
+  
+  
+  <body>    
+    
+       
+   <!--#include virtual="nav.txt" -->
+        
+     
+        
+       
+      <div id="pizza"> 
+      
+      <h1>The  Pizza Palace&#174;  Specialty </h1>
+      
+      <p> 
+       The Pizza Palace&#174;  right now offers its specialty which is Pure Veggie Garden Delight&#174;
+       that is scrumptuous healthy and nutritious. We offer one size pizza for a basic price of <em>
+       $ 11.95 </em>. Customers can get additional toppings of their choice from our toppings menu 
+       for the price of <em> $0.90 </em> per toppings per pizza. All pizzas comes with five toppings. </p>
+       <p> 
+        There is also <em> 10% </em> sales tax charged on the entire order and delivery fee of <em>$ 2.00 </em>
+        for delivery orders .
+              
+       </p>
+       </div>
+       
+       <div id="tab">
+       <table>  
+       <thead>   
+     <th class="a" colspan="3"> Pure Veggie Garden Delight&#174; </th>
+      </thead>
+      <tbody> 
+      <tr>
+       <th id="a1"> Basic Price</th>
+       <th id="a2"> Price Per Toppings </th>
+       <th id="a3"> Delivery Cost </th>
+       </tr>
+        <tr>
+      <td class="ab"> $ 11.95</td>
+      <td class="cd"> $0.95 </td>
+      <td class="ef">$2.00</td>
+        </tr>
+        </tbody>
+   
+       </table>
+       
+       
+     </div>
+     <div id="choice">
+     
+     <p> Choice of Toppings </p>
+     
+     <form action="" class="basicform">
+
+
+      <fieldset style="width: 25%">
+        <legend>Vegetables:</legend>
+        
+        <a href="images/pizza.jpg"
+         onmouseover="document.images.piz.src='images/brocolli.jpg'"
+           
+         
+         
+         onmouseout="document.images.piz.src='images/pizza.jpg'"
+         onclick="   <a href="images/brocolli.jpg" rel="lightbox[Stuff]" title="Pizza with Brocolli Toppings.">
+      <img src="images/brocolli.jpg" alt="" /></a>
+
+<a href="images/green_pepper.jpg" rel="lightbox[Stuff]" title="Pizza with Green Pepper Toppings.">
+ </a>
+
+<a href="images/olives.jpg" rel="lightbox[Stuff]" title="Pizza with Olives Toppings.">
+  </a>
+
+<a href="images/lettuce.jpg" rel="lightbox[Stuff]" title="Pizza with Lettuce Toppings.">
+</a> "
+          >       
+          Brocolli </a> <br />
+         <a href="images/pizza.jpg"
+         onmouseover="document.images.piz.src='images/olives.jpg'"
+         onmouseout="document.images.piz.src='images/pizza.jpg'"
+          > Olives </a> <br />
+         <a href="images/pizza.jpg" 
+         onmouseover="document.images.piz.src='images/green_peppers.jpg'"
+         onmouseout="document.images.piz.src='images/pizza.jpg'"
+          > Green Pepper </a> <br />
+         <a href="images/pizza.jpg" 
+         onmouseover="document.images.piz.src='images/lettuce.jpg'"
+         onmouseout="document.images.piz.src='images/pizza.jpg'"
+         > Lettuce </a> <br />
+         
+      </fieldset>
+       <fieldset style="width: 25%">
+        <legend>Cheese:</legend>
+        
+        <a href="images/pizza.jpg" 
+         onmouseover="document.images.piz.src='images/cheddar.jpg'"
+         onmouseout="document.images.piz.src='images/pizza.jpg'"
+          > Cheddar </a> <br />
+         <a href="images/pizza.jpg" 
+         onmouseover="document.images.piz.src='images/colby.jpg'"
+         onmouseout="document.images.piz.src='images/pizza.jpg'"
+         > Colby </a> <br />
+         <a href="images/pizza.jpg" 
+         onmouseover="document.images.piz.src='images/mozarella.jpg'"
+         onmouseout="document.images.piz.src='images/pizza.jpg'"
+          > Mozarella </a> <br />
+         <a href="images/pizza.jpg"  
+         onmouseover="document.images.piz.src='images/ricota.jpg'"
+         onmouseout="document.images.piz.src='images/pizza.jpg'"
+          > Ricota </a> <br />
+         
+      </fieldset>
+        
+            
+    
+    
+     </form>
+            
+             <img src="images/pizza.jpg" id="piz" alt="piza"
+             
+             />
+            
+            
+
+        
+      </div>
+      
+      <script type="text/javascript">
+         
+      
+         function swap_pic() {
+	          	         
+	         if(document.getElementById('veg1').checked) {
+              document.images.piz.src='images/pizza1.jpg';
+              }
+              else if (document.getElementById('veg2').checked) {
+              document.images.piz.src ='images/pizza2.jpg';
+          }
+  }
+      
+      </script>
+      
+      <script src="js/lightbox-plus-jquery.min.js"></script>
+         <!--#include virtual="footer.shtml" -->
+ 
+    
+  
+  </body>
+</html>

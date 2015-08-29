@@ -1,0 +1,17 @@
+ <header>
+    <div id="logo"> 
+    <p><img src="images/logo.jpg" alt="The Pizza Palace"/> 
+    <strong> THE PIZZA PALACE </strong></p>
+    </div>
+     
+     
+    <nav>
+       <ul>
+              <li><a href="home.shtml"> Home</a></li>
+              <li><a href="pizza.shtml"> Pizza </a></li>
+              <li><a href="order.shtml"> Order </a> </li>
+             
+      </ul>  
+     
+        </nav>
+        </header>

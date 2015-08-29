@@ -1,0 +1,32 @@
+
+          form{background-color: gray;}
+ legend{
+	 color:white;
+		 }
+		 
+		 label{
+			 color:white;
+			 }
+			 p {color:white;}
+			
+		 
+	  em {
+		  color: green;
+		 }
+		  
+	 textarea{
+		     height:400px;
+		     float:right;
+		     width:800px;
+		     margin-top:-150px;
+		  
+		 }
+	 
+	 #custom{
+		 display:block;
+		  background-color:gray;
+		  width:90%;
+		  height:700px;
+		  float:left;
+		 }
+		      

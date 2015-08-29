@@ -1,0 +1,27 @@
+  
+       <div id="footer">  
+       
+       
+       
+        <address> Customer Service<br/>
+              123 Main Street <br/>
+              Somewhere, MD 12345 <br/>
+              <a href="mailto:contact@pizzapalace.com">contact@pizzapalace.com</a>
+              </address>
+              
+              <p class="foot"> Last Modified: <!--#flastmod virtual="/home.shtml" --> </p>
+               
+       <p class="foot">   &#0169; 2015 The Pizza Palace, Inc. All rights reserved. The Pizza Palace name, logos and related marks are trademarks of Pizza Palace, Inc. </p>
+
+      <p class="foot">The HERSHEY'S&#174; trademark and trade dress are used under license. PEPSI, PEPSI-COLA, PEPSI MAX and the Pepsi Globe are 
+            registered trademarks of PepsiCo, Inc. </p>
+       <p class="foot">The App Store, iPad, and iPhone marks are trademarks of Apple, Inc. Twitter is a trademark of Twitter, Inc.  
+        Google and Android are trademarks of Google, Inc. Windows Phone is a registered trademark of Microsoft, Inc.  </p>
+
+     <p class="foot">All other trademarks are the property of their respective owners. </p>
+
+         
+     
+     
+     
+     </div> 

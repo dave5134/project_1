@@ -1,0 +1,95 @@
+
+
+ <!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+
+    <title> Pizza </title>
+    	
+    <link rel="stylesheet" type="text/css" href="css/my_ext.css"/>
+    
+     <script type="text/javascript" src="coin-slider/jquery-1.4.2.js"></script>
+    <script type="text/javascript" src="coin-slider/coin-slider.min.js"></script>
+    <link rel="stylesheet" href="coin-slider/coin-slider-styles.css" type="text/css" />
+
+
+     
+  </head>
+  
+  
+  
+  <body onload = "changeImage()">    
+    <div id="wrapper">
+       
+   <!--#include virtual="nav.txt" -->
+        
+     
+        
+       
+      <div id="school" style="width:50%"> 
+      
+      <h1> The Pizza Palace </h1>
+      
+      <p> 
+      Welcome to Dave's original The Pizza Palace. Back in 2000, inpired by his youth spent in Atlantic City,
+       opened a sub and sandwich shop in Washington DC. In 2005, Dave, after traveling to Chicago experienced deep dish pizza. At that time
+        no one in the DC area offered deep dish Chicago style pizza. Dave and his brother spent months working closely with many people in
+         developing their own dough and sauce recipe. </p>
+
+          
+      <p>With eleven area locations including full service restaurants, party rooms and Express Delivery stores, The Pizza Palace's continues
+       to be a Washington area favorite. Our unique recipes and friendly staff are what truly make the Pizza Palace's experience great! </p>
+
+             <p> The Pizza Palace's Pizza - Always Fresh, Always the Best! </p>
+ 
+         </div>
+          <div id='coin-slider' style="width:50%">
+      
+        <img src='images/pizza4.jpg' >
+        <span>
+         
+        </span>
+    
+                       
+        <img src='images/pizza8.jpg' >
+        <span>
+          The Pizza Palace
+        </span>
+     
+      
+          
+        <img src='images/pizza2.jpg' >
+        <span>
+        The Pizza Palace
+        </span>
+      
+    
+        <img src='images/pizza6.jpg' >
+        <span>
+         
+        </span>
+        <img src='images/pizza3.jpg' >
+        <img src='images/pizza7.jpg' >
+        
+     
+    </div>
+    
+                <script type="text/javascript">
+      $(document).ready(function() {
+        $('#coin-slider').coinslider({ width: 500, height: 300, navigation: false, delay: 3000, navigation: true,
+                                      hoverPause: true, effect: '' })
+                                         });
+    </script>
+
+ 
+       
+       
+     <!--#include virtual="footer.shtml" -->
+
+    
+    
+    
+  </div>
+  </body>
+</html>

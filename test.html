@@ -1,0 +1,254 @@
+
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>IT 581 lab 13</title>
+    
+   <style type="text/css">
+    body {background-color: white; color: black;  }
+    label{
+	   display:block;
+	   font-weight:bold;
+	   text-align:right;
+	   width:100px;
+	   float:left;
+	   }
+	input{
+		font-size:.875em;
+		padding:4px 2px;
+		border:solid 1px #aacfe4;
+		width: 200px;
+		margin:2px 0 10px 5px;
+		}
+
+  </style>
+                    
+  
+
+  <!-- IT 581 Lab Exercise 13        -->
+  <!-- Author: Devendra Prasai                          -->
+  <!-- Date:     07/29/2015                        -->
+  <!-- Notes:   Bill_Calculator                       -->   
+    
+    
+</head>
+<body>
+<h1>Lab 13 - Tip calculator</h1>
+<p>This page lets you calculate a tip amount and total bill to pay.</p> 
+<hr />
+<p>Enter your restaurant bill amount and the percentage you want to tip.</p>
+<p>The report will show both the amount to tip and the total cost of the bill + tip.</p> 
+<form name="frmTipCalc" action="">
+<fieldset>
+<legend>Tip Calculator</legend>
+<label for = "txtBillAmount">Bill:</label>
+ <input type="text" name="txtBillAmount" value=""><br>
+<label for = "txtPercent">Tip percent:</label> 
+<input type="text" name="txtPercent" value="">%<br>
+<textarea name="araResults" rows="4" cols="60">
+Bill	   Tip Percent      Total Cost
+</textarea><br>
+<input type="button"
+         name="btn_calc_tip"
+         value="Calculate Tip and Total"
+         onclick="  
+         
+          var bill, tipPercent, tip, totCost ;
+         
+        var bill=parseFloat(document.frmTipCalc.txtBillAmount.value);
+        
+        var tipPercent=parseFloat(document.frmTipCalc.txtPercent.value);
+         
+        var tip= (tipPercent/100) * bill;
+        
+        var totCost= bill + tip;
+        
+        
+        document.frmTipCalc.araResults.value = document.frmTipCalc.araResults.value +
+        bill + '\t\t' + tipPercent + '\t\t' + totCost + '\n';
+        
+      " />
+        
+        
+      <label for="toppings"><em>3.  Select types of  toppings: </label> <br>
+	<input type="checkbox"  id="brocolli" value="brocolli"/>Brocolli
+	<input type="checkbox" id="olives" value="olives"/>Olives  <br>
+	<input type="checkbox" id="greenPepper" value="greenPepper"/>Green Pepper              
+	<input type="checkbox"  id="lettuce" value="lettuce"/>Lettuce    <br>
+ 
+   <input type="checkbox"  id="cheddar" value="cheddar" />Cheddar
+   <input type="checkbox"  id="colby" value="colby"/>Colby  <br/>
+   <input type="checkbox" id="mozarella" value="mozarella"/>Mozarella              
+   <input type="checkbox"  id="ricota" value="ricota"/>Ricota  </em> </em>  <br>
+
+  <label for="method"> 5. Method: </label>
+  <input type="radio"  id="del" value="delivery"/> Delivery
+  <input type="radio"  id="pic" value="pickUp" /> Pick-Up     <br>
+  
+  <textarea id="message" name="message" rows="15" cols="64">
+    Pizzas   Toppings    Name of Toppings    Delivery    Tax     Final Bill
+    </textarea>
+
+   <input type="submit" name="sendit" value="Finalize Order" onclick="     
+   
+              var pizzaNum, toppingsNum, delivery, cost, tax , finalBill;
+              
+              var pizzaNum=parseFloat(document.order.pizzas.value);
+              
+               var toppingsNum=parseFloat(document.order.tops.value);
+        
+              var delivery= charge(); 
+                                          
+	          var cost= (pizzaNum * 11.95) + (toppingsNum * 0.90) ;
+	          
+	          var tax=  cost * 0.10;
+	          
+	          var finalBill=  cost + tax;
+	          
+	          console.log("hi");
+				console.log(pizzaNum);
+				console.log(toppingsNum);
+				console.log(delivery);
+				console.log(tax);
+	          console.log(finalBill);
+	          
+              document.order.message.value = pizzaNum + '\t\t' +              
+              toppingsNum + '\t\t' + delivery + '\t\t' + tax + '\t\t' + finalBill
+              + '\n'; 
+                    "/>
+         
+      
+      
+      
+      
+
+ <!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+    <title> Order Page </title>
+    	
+    <link rel="stylesheet" type="text/css" href="css/my_ext.css"/>
+    <link rel="stylesheet" type="text/css" href="css/order.css"/>
+    
+  </head>
+  
+  
+  <body>    
+       
+           
+      
+
+
+     <form name="order" action="">
+     <fieldset>
+     <legend> My Choices </legend>
+     
+  <label for="pizzaNumber">1. Enter number of Pizzas: </label><br>
+   <input type="text" id="pizzas" value=""/> <br>
+  
+  <label for="toppingsNumber">2. Enter number of toppings: </label><br>
+  <input type="text" id="tops" value""/> <br>
+  
+  <label for="method"> 5. Method: </label>
+  <input type="radio"  id="del" value="delivery"/> Delivery
+  <input type="radio"  id="pic" value="pickUp" /> Pick-Up     <br>
+  
+  <textarea id="mess" name="message" rows="15" cols="64">
+    Pizzas   Toppings    Name of Toppings    Delivery    Tax     Final Bill
+    </textarea>
+
+    <input type="submit" name="sendit" value="Finalize Order" onclick="     
+   
+              var pizzaNum, toppingsNum, delivery, cost, tax , finalBill;
+              
+              var pizzaNum=parseFloat(document.order.pizzas.value);
+              
+               var toppingsNum=parseFloat(document.order.tops.value);
+        
+              var delivery= charge(); 
+                                          
+	          var cost= (pizzaNum * 11.95) + (toppingsNum * 0.90) ;
+	          
+	          var tax=  cost * 0.10;
+	          
+	          var finalBill=  cost + tax;
+	          
+	          console.log("hi");
+				console.log(pizzaNum);
+				console.log(toppingsNum);
+				console.log(delivery);
+				console.log(tax);
+	          console.log(finalBill);
+	          
+              document.order.message.value = pizzaNum + '\t\t' +              
+              toppingsNum + '\t\t' + delivery + '\t\t' + tax + '\t\t' + finalBill
+              + '\n'; 
+                    "/> 
+   
+        <script>   
+        console.log("hell");
+        </script>
+        
+        <input type="reset" name="clearit" value="Reset the Form" >
+  
+    
+  
+  </form>
+   
+              
+                  
+     
+         <script type="text/javascript">
+         
+            var delCharge;
+                function charge(){   
+             if(document.getElementById('del').checked) {
+              var delCharge = 2.00 ; }
+              else if(document.getElementById('pic').checked){
+	              var delCharge = 0.00 ; }
+	              return delCharge;
+              }
+	              </script> 
+       
+       
+     <!--#include virtual="footer.shtml" -->
+  
+    
+  
+  </body>
+  </html>
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+                 
+      
+                
+<input type="reset" />
+</form>
+</body>
+</html>

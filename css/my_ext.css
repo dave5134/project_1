@@ -1,0 +1,136 @@
+
+      body {background-color: black;
+            padding: 2em;
+      font-family: "Trebuchet MS", Verdana, Arial, sans-serif;
+      }  
+      
+      img {
+	      vertical-align: middle;
+	      margin-left:5px;
+	      margin-top: 5px;
+	      width: 130px;
+	      height: 100px;
+	      
+	      
+	      }
+	      strong {
+		        margin-left: 190px;
+		        font-family: Arial "sans serif";
+		        font-size: 50pt;
+		        color: red;
+		        text-align:middle;
+		        
+		      }
+
+
+
+h1 {
+   font-size: 30px;;
+   margin-top: 10px;
+   background: #4c0000;
+   width: 100%;
+   font-family: Georgia, "Times New Roman", Times, serif;
+   color:#66ccff;
+   
+   
+   }
+
+      
+  
+   nav ul {
+	     background:#3d7a99;
+	     list-style:none;
+	     display:inline;
+	     float: left;
+	     margin-left:250px;
+	     margin-top: 10px;
+	     width: 60%;
+  }   
+          ul a {
+
+	background-repeat: no-repeat;
+	padding-right: 32px;
+	padding-left: 32px;
+	margin-left: 60px;
+	display: inline;
+	line-height: 50px;
+	text-decoration: none;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 30px;
+	color: #cc0000;
+	} 
+	
+	      nav li{
+		     display: inline;
+		     word-spacing:30px;
+		     font-size: 30pt;
+			 font-weight: bold;
+			 	     
+		     }
+		    
+	         
+		     nav ul li a:link, nav ul li a:visited {
+			     
+			     text-decoration:none;
+		         background-color: #3d7a99;
+		        
+			     }
+			     
+  nav ul li a:hover, nav ul li a:active {
+	    
+	     text-decoration:none;
+	     background-color: #3d7a99;
+	     color: blue;
+	}			     
+          
+	p.foot {
+	    
+	    font-size: 10px;
+	    line-height:90%;
+	    margin: .5em 0 .5em 0;
+	    margin-bottom: 0px;
+	      }  
+	      
+	     
+	   
+	  #footer{
+            clear: both;
+            padding: 1em;
+            height: 140px;
+            margin-top:700px;
+            background-color: #475555;
+            text-align: center;
+            width:1000px;
+            margin-left: 100px;
+            
+                      }
+      
+  p{
+	  font-family:arial;
+	  font-size: 25px;
+	  margin-top: 50px;
+	  
+	  }
+	  
+	
+	  #school {
+		  margin-top:5px;
+		  width:50%;
+		  margin-right: 5%;
+		  float: left;
+		  background-color:#ffff99;
+		  color: #33334c;
+		     
+         }
+         
+         #interest {
+	         width: 45%;
+	         float: left;
+	         
+	         }
+
+ 	         
+	         
+	        
+            
+   
